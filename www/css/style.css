@@ -1,0 +1,21 @@
+/* Layout */
+
+.content-primary {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Camera */
+
+.capture {
+    width: 100%;
+    height: auto;
+    display: block;
+    visibility: hidden;
+}
+
+/* Connection Modal */
+
+#connection p {
+    text-align: center;
+}

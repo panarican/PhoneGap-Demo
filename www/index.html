@@ -1,0 +1,194 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Phonegap API</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="css/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+    <script src="js/phonegap-1.4.1.js"></script>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/jquery.mobile-1.0.1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+	<div data-role="header">
+		<h1>Phonegap API</h1>
+	</div><!-- /header -->
+<div data-role="content">
+<div class="content-primary">	
+<ul data-role="listview" data-inset="true" data-filter="true">	
+	<li><a href="#accelerometer">Accelerometer</a></li>
+    <li><a href="#camera">Camera</a></li>
+    <li><a href="#connection" class="checkConnection" data-rel="dialog" data-transition="flip">Check Connection</a></li>
+    <li><a href="#device">Device</a></li>
+	<li><a href="#geolocation">Geolocation</a></li>
+    <li><a href="#media" data-rel="dialog" data-transition="flip">Media</a></li>
+</ul><!-- /listview -->	
+	</div><!-- /content -->
+	
+</div><!-- /content-primary -->
+
+</div><!-- /page Home -->
+    
+    
+    
+    
+    <div data-role="page" id="accelerometer" data-url="accelerometer">
+        <div data-role="header">
+            <h1>Accelerometer</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <div class="content-primary translate3d">
+                <div data-role="collapsible" data-theme="b" data-content-theme="d">
+                    <h3>Description</h3>
+                    <p>Captures device motion in the x, y, and z direction.</p>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="accelerationX">Acceleration X:</label>
+                    <input type="text" name="accelerationX" id="accelerationX" value=""  />
+                </div>	
+                
+                <div data-role="fieldcontain">
+                    <label for="accelerationY">Acceleration Y:</label>
+                    <input type="text" name="accelerationY" id="accelerationY" value=""  />
+                </div>	
+                
+                <div data-role="fieldcontain">
+                    <label for="accelerationZ">Acceleration Z:</label>
+                    <input type="text" name="accelerationZ" id="accelerationZ" value=""  />
+                </div>	
+                
+            </div><!-- /content-primary -->
+        </div><!-- /content -->
+    </div><!-- /page Accelerometer -->  
+    
+    
+    <div data-role="page" id="media" data-url="media">
+        <div data-role="header">
+            <h1>Media</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+           
+                <div data-role="collapsible" data-theme="b" data-content-theme="d">
+                    <h3>Description</h3>
+                    <p>object provides the ability to record and play back audio files on a device</p>
+                </div>
+                
+                <a href="#" data-role="button" class="playAudio">Play Audio</a>
+                
+        </div><!-- /content -->
+    </div><!-- /page Media -->
+    
+    
+    <div data-role="page" id="camera" data-url="camera">
+        <div data-role="header">
+            <h1>Camera</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <div class="content-primary">
+                <div data-role="collapsible" data-theme="b" data-content-theme="d">
+                    <h3>Description</h3>
+                    <p>The camera object provides access to the device's default camera application.</p>
+                </div>
+                <div class="captureWrap"><img src="" class="capture" /></div>
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a class="takePhoto" data-role="button">Take Photo</a>
+                    <a class="fromLibrary" data-role="button">From Library</a>
+                </div>
+            </div><!-- /content-primary -->
+        </div><!-- /content -->
+    </div><!-- /page Camera -->
+    
+    
+    
+    
+    
+    
+<div data-role="page" id="connection" data-url="connection">
+    <div data-role="header">
+        <h1>Connection</h1>
+    </div><!-- /header -->
+    <div data-role="content">
+        <p><!-- connection var injected here --></p>
+       <a href="#" data-role="button"  data-rel="back">Done</a>
+    </div><!-- /content -->
+</div><!-- /page Connection -->  
+    
+    
+    
+    
+    <div data-role="page" id="device" data-url="device">
+        <div data-role="header">
+            <h1>Device</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <div class="content-primary">
+                <div data-role="collapsible" data-theme="b" data-content-theme="d">
+                    <h3>Device</h3>
+                    <p>Gather device specific information.</p>
+                </div>
+        
+                <div data-role="fieldcontain">
+                    <label for="deviceName">Device Name:</label>
+                    <input type="text" name="deviceName" id="deviceName" value=""  />
+                </div>	
+                
+                <div data-role="fieldcontain">
+                    <label for="devicePlatform">Device Platform:</label>
+                    <input type="text" name="devicePlatform" id="devicePlatform" value=""  />
+                </div>	
+                
+                <div data-role="fieldcontain">
+                    <label for="deviceUUID">Device UUID:</label>
+                    <input type="text" name="deviceUUID" id="deviceUUID" value=""  />
+                </div>	
+                
+                <div data-role="fieldcontain">
+                    <label for="deviceVersion">Device Version:</label>
+                    <input type="text" name="deviceVersion" id="deviceVersion" value=""  />
+                </div>	
+                
+            </div><!-- /content-primary -->
+        </div><!-- /content -->
+    </div><!-- /page Device -->  
+    
+    
+    
+    <div data-role="page" id="geolocation" data-url="geolocation">
+        <div data-role="header">
+            <h1>Geolocation</h1>
+        </div><!-- /header -->
+        <div data-role="content">
+            <div class="content-primary">
+                <div data-role="collapsible" data-theme="b" data-content-theme="d">
+                    <h3>Description</h3>
+                    <p>The geolocation object provides access to the device's GPS sensor.</p>
+                </div>
+                
+                <div data-role="fieldcontain">
+                    <label for="longitude">Longitude:</label>
+                    <input type="text" name="longitude" id="longitude" value=""  />
+                </div>	
+                
+                <div data-role="fieldcontain">
+                    <label for="latitude">Latitude:</label>
+                    <input type="text" name="latitude" id="latitude" value=""  />
+                </div>	
+                
+                <div data-role="fieldcontain">
+                    <label for="speed">Speed:</label>
+                    <input type="text" name="speed" id="speed" value=""  />
+                </div>	
+                
+                               
+            </div><!-- /content-primary -->
+        </div><!-- /content -->
+    </div><!-- /page Geolocation -->  
+    
+
+    
+</body>
+</html>
